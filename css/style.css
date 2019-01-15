@@ -1,5 +1,5 @@
 body {
-  width: 100%;
+  min-width: 1170px;
   margin: 0;
   padding: 0;
   font-family: Tahoma, Arial, sans-serif;
@@ -403,7 +403,6 @@ img {
 }
 
 .bottom-footer {
-  min-width: 100%;
   padding-top: 24px;
   padding-bottom: 30px;
   background-color: #31293c;
