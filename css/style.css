@@ -277,6 +277,7 @@ img {
 }
 
 .promo {
+  width: 100%;
   padding-top: 75px;
   padding-bottom: 82px;
   background-color: #ff4e2e;
