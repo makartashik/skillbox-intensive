@@ -1,6 +1,5 @@
 body {
-  min-width: 100%;
-  margin: 0;
+  min-width: 1170px;
   padding: 0;
   font-family: Tahoma, Arial, sans-serif;
   font-size: 20px;
@@ -35,6 +34,7 @@ img {
 }
 
 .main-header {
+  width: 100%;
   padding: 24px 0;
   background-color: #fbfbfb;
 }
@@ -277,7 +277,6 @@ img {
 }
 
 .promo {
-  width: 100%;
   padding-top: 75px;
   padding-bottom: 82px;
   background-color: #ff4e2e;
