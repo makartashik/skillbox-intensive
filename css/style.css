@@ -116,6 +116,7 @@ img {
   background-image: url("../img/banner.png");
   background-repeat: no-repeat;
   background-position: bottom;
+  background-color: #fbfbfb;
 }
 
 .banner-container {
