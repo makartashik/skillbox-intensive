@@ -20,7 +20,9 @@ img {
   height: auto;
 }
 
-.visually-hidden:not(:focus):not(:active) {
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+label.visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -109,6 +111,11 @@ img {
   background-color: transparent;
   border: 1px solid #f53f4f;
   cursor: pointer;
+}
+
+.contacts-button:hover {
+  color: #ffffff;
+  background-color: #f53f4f;
 }
 
 .page-banner {
@@ -413,4 +420,170 @@ img {
   font-size: 16px;
   color: #ffffff;
   margin-left: 453px;
+}
+
+.modal-order {
+  display: none;
+  padding: 30px 40px 40px;
+  position: fixed;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  width: 370px;
+  min-height: 380px;
+  background-color: #ffffff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  z-index: 30;
+}
+
+.modal-order-show {
+  display: block;
+}
+
+.modal-order-wrap {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 20;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.modal-order-wrap-show {
+  display: block;
+}
+
+.modal-order .modal-close {
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+
+.modal-order .modal-close::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  right: 16px;
+  width: 18px;
+  height: 17px;
+  background-image: url("../img/cross-big.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  cursor: pointer;
+}
+
+.modal-order-title {
+  margin: 0;
+  margin-bottom: 18px;
+  font-size: 26px;
+  line-height: 35px;
+  font-weight: 700;
+  color: #000000;
+  text-align: center;
+}
+
+.order-form-item-container {
+  position: relative;
+}
+
+.order-form-item-input {
+  display: inline-block;
+  width: 290px;
+  min-height: 60px;
+  padding: 15px 10px;
+  margin-bottom: 15px;
+  vertical-align: top;
+  font: inherit;
+  font-size: 18px;
+  line-height: 30px;
+  color: #000000;
+  background-color: #ffffff;
+  border: 2px solid #dce0eb;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.order-form-item-input:hover {
+  border: 2px solid #ff4e2e;
+}
+
+.order-form-item-input::-webkit-input-placeholder {
+  font: inherit;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #8993ad;
+}
+
+.order-form-item-input:-ms-input-placeholder {
+  font: inherit;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #8993ad;
+}
+
+.order-form-item-input::-ms-input-placeholder {
+  font: inherit;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #8993ad;
+}
+
+.order-form-item-input::placeholder {
+  font: inherit;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #8993ad;
+}
+
+.order-form p {
+  margin: 0;
+}
+
+.order-button {
+  width: 290px;
+}
+
+.order-form-checkbox label {
+  position: relative;
+  display: block;
+  padding-left: 25px;
+  padding-top: 10px;
+  font-size: 12.85px;
+  line-height: 19px;
+  cursor: pointer;
+}
+
+.order-input-checkbox + label::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 0px;
+  width: 17px;
+  height: 17px;
+  background-image: url("../img/checkbox-off.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+}
+
+.order-input-checkbox:checked + label::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 0px;
+  width: 17px;
+  height: 17px;
+  background-image: url("../img/checkbox-on.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
 }

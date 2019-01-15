@@ -17,7 +17,7 @@
         </ul>
         <div class="site-contacts">
           <span class="contacts-phone">+7 (499) 995-55-77</span>
-          <button class="contacts-button">Заказать звонок</button>
+          <button class="contacts-button section-order-button">Заказать звонок</button>
         </div>
       </div>
     </header>
@@ -68,7 +68,7 @@
               <h3>Сайт магазина «Рыболов»</h3>
             </div>
           </div>
-          <button class="button section-button">Заказать проект</button>
+          <button class="button section-button section-order-button">Заказать проект</button>
         </div>
       </section>
       <section class="promo">
@@ -93,7 +93,7 @@
             <span class="footer-contacts-email">dmitry@alekseev.com</span>
           </div>
           <div class="connection">
-            <button class="contacts-button footer-contacts-button">Заказать звонок</button>
+            <button class="contacts-button footer-contacts-button section-order-button">Заказать звонок</button>
             <ul class="social-list">
               <li>
                 <a href="#">
@@ -158,5 +158,28 @@
       </section>
     </footer>
 
+    <section class="modal modal-order-wrap">
+      <div class="modal-order">
+        <h2 class="modal-order-title">Форма заявки</h2>
+        <form class="order-form" action="" method="post">
+          <div class="order-form-item-container">
+             <label class="visually-hidden" for="user-name">Представьтесь, пожалуйста</label>
+             <input class="order-form-item-input" type="text" id="user-name" name="user-name" placeholder="Имя">
+           </div>
+           <div class="order-form-item-container">
+             <label class="visually-hidden" for="user-phone">Номер вашего телефона</label>
+             <input class="order-form-item-input" type="text" id="user-phone" name="user-phone" placeholder="Телефон">
+           </div>
+           <p><button class="button order-button">Заказать проект</button></p>
+           <div class="order-form-checkbox">
+             <input class="visually-hidden order-input-checkbox" type="checkbox" id="data-processing-id" name="data-processing">
+             <label for="data-processing-id">Я согласен с условиями обработки персональных данных</label>
+           </div>
+        </form>
+        <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
+      </div>
+    </section>
+
+    <script src="js/script.js"></script>
   </body>
 </html>
